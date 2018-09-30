@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9062AE06216132AD0092ACA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062AE05216132AD0092ACA4 /* AppDelegate.swift */; };
-		9062AE08216132AD0092ACA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062AE07216132AD0092ACA4 /* ViewController.swift */; };
+		9062AE08216132AD0092ACA4 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062AE07216132AD0092ACA4 /* CategoriesVC.swift */; };
 		9062AE0B216132AD0092ACA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9062AE09216132AD0092ACA4 /* Main.storyboard */; };
 		9062AE0D216132AF0092ACA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9062AE0C216132AF0092ACA4 /* Assets.xcassets */; };
 		9062AE10216132AF0092ACA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9062AE0E216132AF0092ACA4 /* LaunchScreen.storyboard */; };
+		9062AE1B21613B760092ACA4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062AE1A21613B760092ACA4 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9062AE02216132AD0092ACA4 /* App-Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9062AE05216132AD0092ACA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9062AE07216132AD0092ACA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9062AE07216132AD0092ACA4 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		9062AE0A216132AD0092ACA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9062AE0C216132AF0092ACA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9062AE0F216132AF0092ACA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9062AE11216132AF0092ACA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9062AE1A21613B760092ACA4 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		9062AE04216132AD0092ACA4 /* App-Swag */ = {
 			isa = PBXGroup;
 			children = (
+				9062AE1921613B000092ACA4 /* View */,
+				9062AE1821613ABF0092ACA4 /* Model */,
+				9062AE1721613A9F0092ACA4 /* Controller */,
 				9062AE05216132AD0092ACA4 /* AppDelegate.swift */,
-				9062AE07216132AD0092ACA4 /* ViewController.swift */,
 				9062AE09216132AD0092ACA4 /* Main.storyboard */,
 				9062AE0C216132AF0092ACA4 /* Assets.xcassets */,
 				9062AE0E216132AF0092ACA4 /* LaunchScreen.storyboard */,
 				9062AE11216132AF0092ACA4 /* Info.plist */,
 			);
 			path = "App-Swag";
+			sourceTree = "<group>";
+		};
+		9062AE1721613A9F0092ACA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9062AE07216132AD0092ACA4 /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9062AE1821613ABF0092ACA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9062AE1921613B000092ACA4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9062AE1A21613B760092ACA4 /* CategoryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9062AE08216132AD0092ACA4 /* ViewController.swift in Sources */,
+				9062AE08216132AD0092ACA4 /* CategoriesVC.swift in Sources */,
 				9062AE06216132AD0092ACA4 /* AppDelegate.swift in Sources */,
+				9062AE1B21613B760092ACA4 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
